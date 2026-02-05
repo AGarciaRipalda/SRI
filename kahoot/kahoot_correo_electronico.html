@@ -1,0 +1,1358 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang xml:lang>
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>kahoot_correo_electronico</title>
+  <style>
+
+html {
+color: #1a1a1a;
+background-color: #fdfdfd;
+}
+body {
+margin: 0 auto;
+max-width: 36em;
+padding-left: 50px;
+padding-right: 50px;
+padding-top: 50px;
+padding-bottom: 50px;
+hyphens: auto;
+overflow-wrap: break-word;
+text-rendering: optimizeLegibility;
+font-kerning: normal;
+}
+@media (max-width: 600px) {
+body {
+font-size: 0.9em;
+padding: 12px;
+}
+h1 {
+font-size: 1.8em;
+}
+}
+@media print {
+html {
+background-color: white;
+}
+body {
+background-color: transparent;
+color: black;
+font-size: 12pt;
+}
+p, h2, h3 {
+orphans: 3;
+widows: 3;
+}
+h2, h3, h4 {
+page-break-after: avoid;
+}
+}
+p {
+margin: 1em 0;
+}
+a {
+color: #1a1a1a;
+}
+a:visited {
+color: #1a1a1a;
+}
+img {
+max-width: 100%;
+}
+svg {
+height: auto;
+max-width: 100%;
+}
+h1, h2, h3, h4, h5, h6 {
+margin-top: 1.4em;
+}
+h5, h6 {
+font-size: 1em;
+font-style: italic;
+}
+h6 {
+font-weight: normal;
+}
+ol, ul {
+padding-left: 1.7em;
+margin-top: 1em;
+}
+li > ol, li > ul {
+margin-top: 0;
+}
+blockquote {
+margin: 1em 0 1em 1.7em;
+padding-left: 1em;
+border-left: 2px solid #e6e6e6;
+color: #606060;
+}
+code {
+font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+font-size: 85%;
+margin: 0;
+hyphens: manual;
+}
+pre {
+margin: 1em 0;
+overflow: auto;
+}
+pre code {
+padding: 0;
+overflow: visible;
+overflow-wrap: normal;
+}
+.sourceCode {
+background-color: transparent;
+overflow: visible;
+}
+hr {
+border: none;
+border-top: 1px solid #1a1a1a;
+height: 1px;
+margin: 1em 0;
+}
+table {
+margin: 1em 0;
+border-collapse: collapse;
+width: 100%;
+overflow-x: auto;
+display: block;
+font-variant-numeric: lining-nums tabular-nums;
+}
+table caption {
+margin-bottom: 0.75em;
+}
+tbody {
+margin-top: 0.5em;
+border-top: 1px solid #1a1a1a;
+border-bottom: 1px solid #1a1a1a;
+}
+th {
+border-top: 1px solid #1a1a1a;
+padding: 0.25em 0.5em 0.25em 0.5em;
+}
+td {
+padding: 0.125em 0.5em 0.25em 0.5em;
+}
+header {
+margin-bottom: 4em;
+text-align: center;
+}
+#TOC li {
+list-style: none;
+}
+#TOC ul {
+padding-left: 1.3em;
+}
+#TOC > ul {
+padding-left: 0;
+}
+#TOC a:not(:hover) {
+text-decoration: none;
+}
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+
+ul.task-list[class]{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+font-size: inherit;
+width: 0.8em;
+margin: 0 0.8em 0.2em -1.6em;
+vertical-align: middle;
+}
+.display.math{display: block; text-align: center; margin: 0.5rem auto;}
+</style>
+</head>
+<body>
+<h1 id="kahoot---administración-avanzada-de-servicios-de-correo-electrónico">Kahoot
+- Administración Avanzada de Servicios de Correo Electrónico</h1>
+<h2 id="banco-de-preguntas-técnicas-para-kahoot">Banco de Preguntas
+Técnicas para Kahoot</h2>
+<p>Este documento contiene 50 preguntas técnicas diseñadas para evaluar
+la comprensión profunda de los mecanismos de correo electrónico. Cada
+pregunta incluye 4 opciones de respuesta y una explicación técnica
+detallada.</p>
+<hr />
+<h3 id="pregunta-1">Pregunta 1</h3>
+<p><strong>¿Qué agente es responsable de enrutar mensajes entre
+servidores?</strong></p>
+<ul>
+<li><ol type="A">
+<li>MUA (Mail User Agent)</li>
+</ol></li>
+<li><ol start="2" type="A">
+<li>MTA (Mail Transport Agent) ✓</li>
+</ol></li>
+<li><ol start="3" type="A">
+<li>MDA (Mail Delivery Agent)</li>
+</ol></li>
+<li><ol start="4" type="A">
+<li>MSA (Mail Submission Agent)</li>
+</ol></li>
+</ul>
+<p><strong>Explicación</strong>: El MTA (Mail Transport Agent) utiliza
+el protocolo SMTP para mover el correo a través de las redes entre
+diferentes servidores. Software como Postfix o Exim actúan como
+MTAs.</p>
+<hr />
+<h3 id="pregunta-2">Pregunta 2</h3>
+<p><strong>¿Cuál es el puerto estándar para SMTP Submission (MUA a
+MTA)?</strong></p>
+<ul>
+<li><ol type="A">
+<li>25</li>
+</ol></li>
+<li><ol start="2" type="A">
+<li>465</li>
+</ol></li>
+<li><ol start="3" type="A">
+<li>587 ✓</li>
+</ol></li>
+<li><ol start="4" type="A">
+<li>993</li>
+</ol></li>
+</ul>
+<p><strong>Explicación</strong>: El puerto 587 se prefiere para el envío
+de clientes (submission) con autenticación obligatoria. El puerto 25 es
+para tráfico MTA a MTA, y 465 es SMTPS (SSL implícito).</p>
+<hr />
+<h3 id="pregunta-3">Pregunta 3</h3>
+<p><strong>¿Qué registro DNS especifica el servidor de correo de un
+dominio?</strong></p>
+<ul>
+<li><ol type="A">
+<li>A (Address)</li>
+</ol></li>
+<li><ol start="2" type="A">
+<li>MX (Mail Exchanger) ✓</li>
+</ol></li>
+<li><ol start="3" type="A">
+<li>PTR (Pointer)</li>
+</ol></li>
+<li><ol start="4" type="A">
+<li>CNAME (Canonical Name)</li>
+</ol></li>
+</ul>
+<p><strong>Explicación</strong>: Los registros MX indican la prioridad y
+el host receptor del dominio. Sin registros MX correctos, el correo no
+puede ser entregado.</p>
+<hr />
+<h3 id="pregunta-4">Pregunta 4</h3>
+<p><strong>¿Qué protocolo sincroniza las carpetas del servidor con el
+cliente?</strong></p>
+<ul>
+<li><ol type="A">
+<li>SMTP</li>
+</ol></li>
+<li><ol start="2" type="A">
+<li>POP3</li>
+</ol></li>
+<li><ol start="3" type="A">
+<li>IMAP ✓</li>
+</ol></li>
+<li><ol start="4" type="A">
+<li>HTTP</li>
+</ol></li>
+</ul>
+<p><strong>Explicación</strong>: IMAP (Internet Message Access Protocol)
+permite mantener la estructura de carpetas en el servidor de forma
+persistente y sincronizada entre múltiples dispositivos.</p>
+<hr />
+<h3 id="pregunta-5">Pregunta 5</h3>
+<p><strong>¿Qué comando SMTP inicia la transferencia del contenido del
+correo?</strong></p>
+<ul>
+<li><ol type="A">
+<li>MAIL FROM</li>
+</ol></li>
+<li><ol start="2" type="A">
+<li>RCPT TO</li>
+</ol></li>
+<li><ol start="3" type="A">
+<li>DATA ✓</li>
+</ol></li>
+<li><ol start="4" type="A">
+<li>EHLO</li>
+</ol></li>
+</ul>
+<p><strong>Explicación</strong>: Tras el comando DATA, el servidor
+espera las cabeceras y el cuerpo del mensaje, finalizando con un punto
+(.) en una línea solitaria.</p>
+<hr />
+<h3 id="pregunta-6">Pregunta 6</h3>
+<p><strong>¿Qué significa el código de respuesta SMTP 550?</strong></p>
+<ul>
+<li><ol type="A">
+<li>Servicio listo</li>
+</ol></li>
+<li><ol start="2" type="A">
+<li>Acción completada</li>
+</ol></li>
+<li><ol start="3" type="A">
+<li>Buzón no disponible / Acceso denegado ✓</li>
+</ol></li>
+<li><ol start="4" type="A">
+<li>Servicio no disponible temporalmente</li>
+</ol></li>
+</ul>
+<p><strong>Explicación</strong>: El código 550 es un error permanente
+que indica que la transacción no puede completarse, típicamente porque
+el buzón no existe o el acceso está denegado.</p>
+<hr />
+<h3 id="pregunta-7">Pregunta 7</h3>
+<p><strong>¿Qué registro SPF indica un “SoftFail” si la IP no está
+autorizada?</strong></p>
+<ul>
+<li><ol type="A">
+<li>-all</li>
+</ol></li>
+<li><ol start="2" type="A">
+<li>~all ✓</li>
+</ol></li>
+<li><ol start="3" type="A">
+<li>+all</li>
+</ol></li>
+<li><ol start="4" type="A">
+<li>?all</li>
+</ol></li>
+</ul>
+<p><strong>Explicación</strong>: La tilde (~) en “~all” indica que el
+correo debe marcarse como sospechoso pero no necesariamente rechazarse.
+Es menos estricto que “-all”.</p>
+<hr />
+<h3 id="pregunta-8">Pregunta 8</h3>
+<p><strong>¿En qué archivo de Postfix se habilitan servicios como smtps
+o submission?</strong></p>
+<ul>
+<li><ol type="A">
+<li>main.cf</li>
+</ol></li>
+<li><ol start="2" type="A">
+<li>master.cf ✓</li>
+</ol></li>
+<li><ol start="3" type="A">
+<li>aliases</li>
+</ol></li>
+<li><ol start="4" type="A">
+<li>virtual</li>
+</ol></li>
+</ul>
+<p><strong>Explicación</strong>: El archivo master.cf controla los
+demonios individuales de Postfix y los puertos en los que escuchan.
+main.cf controla el comportamiento global.</p>
+<hr />
+<h3 id="pregunta-9">Pregunta 9</h3>
+<p><strong>¿Qué extensión permite enviar archivos binarios por
+correo?</strong></p>
+<ul>
+<li><ol type="A">
+<li>SMTP</li>
+</ol></li>
+<li><ol start="2" type="A">
+<li>MIME ✓</li>
+</ol></li>
+<li><ol start="3" type="A">
+<li>ASCII</li>
+</ol></li>
+<li><ol start="4" type="A">
+<li>UTF-8</li>
+</ol></li>
+</ul>
+<p><strong>Explicación</strong>: MIME (Multipurpose Internet Mail
+Extensions) codifica datos no textuales (imágenes, videos, etc.) en
+formato ASCII para su transmisión por correo electrónico.</p>
+<hr />
+<h3 id="pregunta-10">Pregunta 10</h3>
+<p><strong>¿Qué herramienta se usa para generar firmas DKIM en
+Postfix?</strong></p>
+<ul>
+<li><ol type="A">
+<li>SpamAssassin</li>
+</ol></li>
+<li><ol start="2" type="A">
+<li>OpenDKIM ✓</li>
+</ol></li>
+<li><ol start="3" type="A">
+<li>ClamAV</li>
+</ol></li>
+<li><ol start="4" type="A">
+<li>Amavis</li>
+</ol></li>
+</ul>
+<p><strong>Explicación</strong>: OpenDKIM es el software estándar para
+implementar firmas criptográficas DKIM en el flujo de correo de
+Postfix.</p>
+<hr />
+<h3 id="pregunta-11">Pregunta 11</h3>
+<p><strong>¿Qué protocolo de acceso descarga los correos y suele
+borrarlos del servidor?</strong></p>
+<ul>
+<li><ol type="A">
+<li>SMTP</li>
+</ol></li>
+<li><ol start="2" type="A">
+<li>IMAP</li>
+</ol></li>
+<li><ol start="3" type="A">
+<li>POP3 ✓</li>
+</ol></li>
+<li><ol start="4" type="A">
+<li>LMTP</li>
+</ol></li>
+</ul>
+<p><strong>Explicación</strong>: POP3 (Post Office Protocol v3) está
+diseñado para almacenamiento local en el cliente del usuario,
+descargando y típicamente eliminando los mensajes del servidor.</p>
+<hr />
+<h3 id="pregunta-12">Pregunta 12</h3>
+<p><strong>¿Cuál es el puerto estándar de IMAP cifrado con SSL/TLS
+(IMAPS)?</strong></p>
+<ul>
+<li><ol type="A">
+<li>143</li>
+</ol></li>
+<li><ol start="2" type="A">
+<li>993 ✓</li>
+</ol></li>
+<li><ol start="3" type="A">
+<li>995</li>
+</ol></li>
+<li><ol start="4" type="A">
+<li>587</li>
+</ol></li>
+</ul>
+<p><strong>Explicación</strong>: IMAPS proporciona una capa de seguridad
+implícita sobre el puerto 993. El puerto 143 es IMAP sin cifrar.</p>
+<hr />
+<h3 id="pregunta-13">Pregunta 13</h3>
+<p><strong>¿Qué directiva de Postfix define qué dominios se entregan
+localmente?</strong></p>
+<ul>
+<li><ol type="A">
+<li>myhostname</li>
+</ol></li>
+<li><ol start="2" type="A">
+<li>mynetworks</li>
+</ol></li>
+<li><ol start="3" type="A">
+<li>mydestination ✓</li>
+</ol></li>
+<li><ol start="4" type="A">
+<li>relayhost</li>
+</ol></li>
+</ul>
+<p><strong>Explicación</strong>: La directiva mydestination evita que el
+servidor intente reenviar al exterior correos que debe procesar él mismo
+localmente.</p>
+<hr />
+<h3 id="pregunta-14">Pregunta 14</h3>
+<p><strong>¿Qué comando SMTP se usa para finalizar la
+conexión?</strong></p>
+<ul>
+<li><ol type="A">
+<li>EXIT</li>
+</ol></li>
+<li><ol start="2" type="A">
+<li>CLOSE</li>
+</ol></li>
+<li><ol start="3" type="A">
+<li>QUIT ✓</li>
+</ol></li>
+<li><ol start="4" type="A">
+<li>BYE</li>
+</ol></li>
+</ul>
+<p><strong>Explicación</strong>: El comando QUIT indica al servidor que
+la sesión ha terminado y puede cerrar el socket TCP.</p>
+<hr />
+<h3 id="pregunta-15">Pregunta 15</h3>
+<p><strong>¿Qué es un “Open Relay”?</strong></p>
+<ul>
+<li><ol type="A">
+<li>Un servidor muy rápido</li>
+</ol></li>
+<li><ol start="2" type="A">
+<li>Un servidor que permite reenviar correo a cualquiera ✓</li>
+</ol></li>
+<li><ol start="3" type="A">
+<li>Un servidor con cifrado</li>
+</ol></li>
+<li><ol start="4" type="A">
+<li>Un servidor con autenticación</li>
+</ol></li>
+</ul>
+<p><strong>Explicación</strong>: Un Open Relay es una vulnerabilidad
+grave que permite a spammers usar el servidor para enviar correo masivo,
+resultando en inclusión en listas negras.</p>
+<hr />
+<h3 id="pregunta-16">Pregunta 16</h3>
+<p><strong>¿Qué registro DNS asocia una IP con un nombre de dominio
+(inversa)?</strong></p>
+<ul>
+<li><ol type="A">
+<li>A</li>
+</ol></li>
+<li><ol start="2" type="A">
+<li>MX</li>
+</ol></li>
+<li><ol start="3" type="A">
+<li>PTR ✓</li>
+</ol></li>
+<li><ol start="4" type="A">
+<li>TXT</li>
+</ol></li>
+</ul>
+<p><strong>Explicación</strong>: El registro PTR es fundamental para que
+los receptores confíen en la identidad del servidor emisor mediante
+resolución DNS inversa.</p>
+<hr />
+<h3 id="pregunta-17">Pregunta 17</h3>
+<p><strong>¿Qué protocolo añade una capa de autenticación a SMTP e
+IMAP?</strong></p>
+<ul>
+<li><ol type="A">
+<li>TLS</li>
+</ol></li>
+<li><ol start="2" type="A">
+<li>SSL</li>
+</ol></li>
+<li><ol start="3" type="A">
+<li>SASL ✓</li>
+</ol></li>
+<li><ol start="4" type="A">
+<li>OAuth</li>
+</ol></li>
+</ul>
+<p><strong>Explicación</strong>: SASL (Simple Authentication and
+Security Layer) permite negociar mecanismos de seguridad como
+contraseñas cifradas o tokens de autenticación.</p>
+<hr />
+<h3 id="pregunta-18">Pregunta 18</h3>
+<p><strong>¿Cuál es la principal ventaja de Maildir sobre
+mbox?</strong></p>
+<ul>
+<li><ol type="A">
+<li>Ocupa menos espacio</li>
+</ol></li>
+<li><ol start="2" type="A">
+<li>Es más rápido</li>
+</ol></li>
+<li><ol start="3" type="A">
+<li>No requiere bloqueo de archivos (locking) ✓</li>
+</ol></li>
+<li><ol start="4" type="A">
+<li>Es más antiguo</li>
+</ol></li>
+</ul>
+<p><strong>Explicación</strong>: Al usar archivos individuales por
+correo, Maildir evita la corrupción de buzones grandes y los problemas
+de bloqueo concurrente.</p>
+<hr />
+<h3 id="pregunta-19">Pregunta 19</h3>
+<p><strong>¿Qué tag de DMARC indica la dirección para informes
+agregados?</strong></p>
+<ul>
+<li><ol type="A">
+<li>ruf</li>
+</ol></li>
+<li><ol start="2" type="A">
+<li>rua ✓</li>
+</ol></li>
+<li><ol start="3" type="A">
+<li>p</li>
+</ol></li>
+<li><ol start="4" type="A">
+<li>sp</li>
+</ol></li>
+</ul>
+<p><strong>Explicación</strong>: El tag “rua”
+(rua=mailto:admin@dominio.com) permite recibir estadísticas diarias
+agregadas de fallos de autenticación.</p>
+<hr />
+<h3 id="pregunta-20">Pregunta 20</h3>
+<p><strong>¿Qué motor de filtrado usa reglas bayesianas para detectar
+spam?</strong></p>
+<ul>
+<li><ol type="A">
+<li>ClamAV</li>
+</ol></li>
+<li><ol start="2" type="A">
+<li>Amavis</li>
+</ol></li>
+<li><ol start="3" type="A">
+<li>SpamAssassin ✓</li>
+</ol></li>
+<li><ol start="4" type="A">
+<li>Postfix</li>
+</ol></li>
+</ul>
+<p><strong>Explicación</strong>: SpamAssassin analiza patrones
+estadísticos y asigna una puntuación de probabilidad de que el mensaje
+sea basura (spam).</p>
+<hr />
+<h3 id="pregunta-21">Pregunta 21</h3>
+<p><strong>¿Qué significa el código SMTP 250?</strong></p>
+<ul>
+<li><ol type="A">
+<li>Error temporal</li>
+</ol></li>
+<li><ol start="2" type="A">
+<li>Acción completada correctamente ✓</li>
+</ol></li>
+<li><ol start="3" type="A">
+<li>Buzón lleno</li>
+</ol></li>
+<li><ol start="4" type="A">
+<li>Conexión rechazada</li>
+</ol></li>
+</ul>
+<p><strong>Explicación</strong>: El código 250 es la confirmación de
+éxito de casi cualquier comando SMTP (MAIL FROM, RCPT TO, DATA,
+etc.).</p>
+<hr />
+<h3 id="pregunta-22">Pregunta 22</h3>
+<p><strong>¿Qué puerto usa POP3 de forma segura (SSL/TLS)?</strong></p>
+<ul>
+<li><ol type="A">
+<li>110</li>
+</ol></li>
+<li><ol start="2" type="A">
+<li>995 ✓</li>
+</ol></li>
+<li><ol start="3" type="A">
+<li>993</li>
+</ol></li>
+<li><ol start="4" type="A">
+<li>465</li>
+</ol></li>
+</ul>
+<p><strong>Explicación</strong>: El puerto 995 proporciona POP3 con
+cifrado SSL/TLS implícito para la descarga segura de mensajes.</p>
+<hr />
+<h3 id="pregunta-23">Pregunta 23</h3>
+<p><strong>¿Qué cabecera técnica rastrea cada salto de un
+correo?</strong></p>
+<ul>
+<li><ol type="A">
+<li>From</li>
+</ol></li>
+<li><ol start="2" type="A">
+<li>To</li>
+</ol></li>
+<li><ol start="3" type="A">
+<li>Received ✓</li>
+</ol></li>
+<li><ol start="4" type="A">
+<li>Subject</li>
+</ol></li>
+</ul>
+<p><strong>Explicación</strong>: Los MTAs añaden la cabecera “Received”
+con su IP y marca de tiempo en cada salto, permitiendo rastrear la ruta
+completa del mensaje.</p>
+<hr />
+<h3 id="pregunta-24">Pregunta 24</h3>
+<p><strong>¿Qué comando se usa en Debian para refrescar los aliases de
+correo?</strong></p>
+<ul>
+<li><ol type="A">
+<li>postfix reload</li>
+</ol></li>
+<li><ol start="2" type="A">
+<li>newaliases ✓</li>
+</ol></li>
+<li><ol start="3" type="A">
+<li>postmap</li>
+</ol></li>
+<li><ol start="4" type="A">
+<li>postqueue</li>
+</ol></li>
+</ul>
+<p><strong>Explicación</strong>: El comando “newaliases” convierte el
+archivo /etc/aliases de texto plano en una base de datos binaria
+indexada para Postfix.</p>
+<hr />
+<h3 id="pregunta-25">Pregunta 25</h3>
+<p><strong>¿Qué es el “Greylisting”?</strong></p>
+<ul>
+<li><ol type="A">
+<li>Filtro de virus</li>
+</ol></li>
+<li><ol start="2" type="A">
+<li>Rechazo temporal de correos de remitentes desconocidos ✓</li>
+</ol></li>
+<li><ol start="3" type="A">
+<li>Lista negra permanente</li>
+</ol></li>
+<li><ol start="4" type="A">
+<li>Cifrado de mensajes</li>
+</ol></li>
+</ul>
+<p><strong>Explicación</strong>: Greylisting obliga a los servidores
+legítimos a reintentar el envío, mientras que los spammers suelen
+desistir tras el primer rechazo temporal.</p>
+<hr />
+<h3 id="pregunta-26">Pregunta 26</h3>
+<p><strong>¿Qué estándar protege el cuerpo del mensaje de ser
+alterado?</strong></p>
+<ul>
+<li><ol type="A">
+<li>SPF</li>
+</ol></li>
+<li><ol start="2" type="A">
+<li>DKIM ✓</li>
+</ol></li>
+<li><ol start="3" type="A">
+<li>DMARC</li>
+</ol></li>
+<li><ol start="4" type="A">
+<li>TLS</li>
+</ol></li>
+</ul>
+<p><strong>Explicación</strong>: DKIM (DomainKeys Identified Mail) crea
+una firma criptográfica que cubre las cabeceras críticas y el cuerpo del
+mensaje.</p>
+<hr />
+<h3 id="pregunta-27">Pregunta 27</h3>
+<p><strong>¿Qué protocolo usa Mailman para hablar con
+Postfix?</strong></p>
+<ul>
+<li><ol type="A">
+<li>SMTP</li>
+</ol></li>
+<li><ol start="2" type="A">
+<li>IMAP</li>
+</ol></li>
+<li><ol start="3" type="A">
+<li>LMTP ✓</li>
+</ol></li>
+<li><ol start="4" type="A">
+<li>POP3</li>
+</ol></li>
+</ul>
+<p><strong>Explicación</strong>: LMTP (Local Mail Transfer Protocol) es
+una versión optimizada de SMTP para entregas locales a aplicaciones como
+Mailman.</p>
+<hr />
+<h3 id="pregunta-28">Pregunta 28</h3>
+<p><strong>¿Cuál es la política DMARC más estricta?</strong></p>
+<ul>
+<li><ol type="A">
+<li>p=none</li>
+</ol></li>
+<li><ol start="2" type="A">
+<li>p=quarantine</li>
+</ol></li>
+<li><ol start="3" type="A">
+<li>p=reject ✓</li>
+</ol></li>
+<li><ol start="4" type="A">
+<li>p=monitor</li>
+</ol></li>
+</ul>
+<p><strong>Explicación</strong>: La política “p=reject” instruye al
+receptor a descartar totalmente el correo si falla la autenticación SPF
+o DKIM.</p>
+<hr />
+<h3 id="pregunta-29">Pregunta 29</h3>
+<p><strong>¿Qué comando SMTP permite verificar si existe un usuario en
+el sistema?</strong></p>
+<ul>
+<li><ol type="A">
+<li>EXPN</li>
+</ol></li>
+<li><ol start="2" type="A">
+<li>VRFY ✓</li>
+</ol></li>
+<li><ol start="3" type="A">
+<li>RCPT</li>
+</ol></li>
+<li><ol start="4" type="A">
+<li>MAIL</li>
+</ol></li>
+</ul>
+<p><strong>Explicación</strong>: VRFY (verify) permite verificar
+usuarios, pero por seguridad suele estar deshabilitado para evitar
+recolección de direcciones por atacantes.</p>
+<hr />
+<h3 id="pregunta-30">Pregunta 30</h3>
+<p><strong>¿Qué puerto usa SMTP para transporte entre servidores (sin
+cifrado obligatorio)?</strong></p>
+<ul>
+<li><ol type="A">
+<li>25 ✓</li>
+</ol></li>
+<li><ol start="2" type="A">
+<li>465</li>
+</ol></li>
+<li><ol start="3" type="A">
+<li>587</li>
+</ol></li>
+<li><ol start="4" type="A">
+<li>993</li>
+</ol></li>
+</ul>
+<p><strong>Explicación</strong>: El puerto 25 es el puerto por defecto
+para el tráfico de red de correo global entre MTAs.</p>
+<hr />
+<h3 id="pregunta-31">Pregunta 31</h3>
+<p><strong>¿Qué directiva de Dovecot especifica dónde se guardan los
+correos?</strong></p>
+<ul>
+<li><ol type="A">
+<li>mail_home</li>
+</ol></li>
+<li><ol start="2" type="A">
+<li>mail_location ✓</li>
+</ol></li>
+<li><ol start="3" type="A">
+<li>mail_path</li>
+</ol></li>
+<li><ol start="4" type="A">
+<li>mail_dir</li>
+</ol></li>
+</ul>
+<p><strong>Explicación</strong>: La directiva “mail_location” define la
+ruta y el formato (Maildir:~/Maildir o mbox:~/mail) donde se almacenan
+los mensajes.</p>
+<hr />
+<h3 id="pregunta-32">Pregunta 32</h3>
+<p><strong>¿Qué es un MUA?</strong></p>
+<ul>
+<li><ol type="A">
+<li>Mail Transfer Agent</li>
+</ol></li>
+<li><ol start="2" type="A">
+<li>Mail User Agent ✓</li>
+</ol></li>
+<li><ol start="3" type="A">
+<li>Mail Utility Application</li>
+</ol></li>
+<li><ol start="4" type="A">
+<li>Mail Universal Access</li>
+</ol></li>
+</ul>
+<p><strong>Explicación</strong>: MUA (Mail User Agent) es la aplicación
+cliente (Thunderbird, Outlook, Mutt) que usa el destinatario para leer y
+componer correos.</p>
+<hr />
+<h3 id="pregunta-33">Pregunta 33</h3>
+<p><strong>¿Qué comando IMAP permite leer solo la cabecera de un
+mensaje?</strong></p>
+<ul>
+<li><ol type="A">
+<li>GET</li>
+</ol></li>
+<li><ol start="2" type="A">
+<li>READ</li>
+</ol></li>
+<li><ol start="3" type="A">
+<li>FETCH ✓</li>
+</ol></li>
+<li><ol start="4" type="A">
+<li>RETRIEVE</li>
+</ol></li>
+</ul>
+<p><strong>Explicación</strong>: El comando FETCH de IMAP permite
+optimizar el ancho de banda descargando solo las cabeceras o partes
+específicas del mensaje.</p>
+<hr />
+<h3 id="pregunta-34">Pregunta 34</h3>
+<p><strong>¿Qué significa el código SMTP 421?</strong></p>
+<ul>
+<li><ol type="A">
+<li>Acción completada</li>
+</ol></li>
+<li><ol start="2" type="A">
+<li>El servicio no está disponible temporalmente ✓</li>
+</ol></li>
+<li><ol start="3" type="A">
+<li>Buzón no encontrado</li>
+</ol></li>
+<li><ol start="4" type="A">
+<li>Autenticación requerida</li>
+</ol></li>
+</ul>
+<p><strong>Explicación</strong>: El código 421 indica un problema
+temporal en el servidor receptor que sugiere reintentar el envío más
+tarde.</p>
+<hr />
+<h3 id="pregunta-35">Pregunta 35</h3>
+<p><strong>¿Qué registro DNS es necesario para validar la firma
+DKIM?</strong></p>
+<ul>
+<li><ol type="A">
+<li>Registro A</li>
+</ol></li>
+<li><ol start="2" type="A">
+<li>Registro MX</li>
+</ol></li>
+<li><ol start="3" type="A">
+<li>Registro TXT con la clave pública ✓</li>
+</ol></li>
+<li><ol start="4" type="A">
+<li>Registro PTR</li>
+</ol></li>
+</ul>
+<p><strong>Explicación</strong>: El selector y el dominio forman el
+nombre del host DNS donde se publica la clave pública DKIM en un
+registro TXT.</p>
+<hr />
+<h3 id="pregunta-36">Pregunta 36</h3>
+<p><strong>¿Qué es el “Envelope From”?</strong></p>
+<ul>
+<li><ol type="A">
+<li>La dirección visible en el cliente</li>
+</ol></li>
+<li><ol start="2" type="A">
+<li>El remitente declarado en MAIL FROM ✓</li>
+</ol></li>
+<li><ol start="3" type="A">
+<li>El asunto del mensaje</li>
+</ol></li>
+<li><ol start="4" type="A">
+<li>La fecha de envío</li>
+</ol></li>
+</ul>
+<p><strong>Explicación</strong>: El “Envelope From” es el remitente
+declarado en el comando SMTP MAIL FROM, usado para notificaciones de
+rebote (bounce).</p>
+<hr />
+<h3 id="pregunta-37">Pregunta 37</h3>
+<p><strong>¿Qué demonio de Postfix gestiona la cola de
+correo?</strong></p>
+<ul>
+<li><ol type="A">
+<li>smtpd</li>
+</ol></li>
+<li><ol start="2" type="A">
+<li>qmgr ✓</li>
+</ol></li>
+<li><ol start="3" type="A">
+<li>cleanup</li>
+</ol></li>
+<li><ol start="4" type="A">
+<li>master</li>
+</ol></li>
+</ul>
+<p><strong>Explicación</strong>: El Queue Manager (qmgr) decide cuándo y
+cómo se procesan los mensajes en espera en la cola de Postfix.</p>
+<hr />
+<h3 id="pregunta-38">Pregunta 38</h3>
+<p><strong>¿Qué herramienta de Linux permite enviar correos desde la
+terminal?</strong></p>
+<ul>
+<li><ol type="A">
+<li>sendmail</li>
+</ol></li>
+<li><ol start="2" type="A">
+<li>mail / mailx ✓</li>
+</ol></li>
+<li><ol start="3" type="A">
+<li>telnet</li>
+</ol></li>
+<li><ol start="4" type="A">
+<li>curl</li>
+</ol></li>
+</ul>
+<p><strong>Explicación</strong>: “mail” o “mailx” son MUAs básicos de
+línea de comandos útiles para scripts y pruebas rápidas.</p>
+<hr />
+<h3 id="pregunta-39">Pregunta 39</h3>
+<p><strong>¿Qué cifrado se inicia en el puerto 25 para subir el nivel de
+seguridad?</strong></p>
+<ul>
+<li><ol type="A">
+<li>SSL</li>
+</ol></li>
+<li><ol start="2" type="A">
+<li>STARTTLS ✓</li>
+</ol></li>
+<li><ol start="3" type="A">
+<li>TLS</li>
+</ol></li>
+<li><ol start="4" type="A">
+<li>HTTPS</li>
+</ol></li>
+</ul>
+<p><strong>Explicación</strong>: STARTTLS convierte una conexión SMTP
+plana existente en una cifrada mediante TLS, negociado durante la
+sesión.</p>
+<hr />
+<h3 id="pregunta-40">Pregunta 40</h3>
+<p><strong>¿Qué significa la alineación en DMARC?</strong></p>
+<ul>
+<li><ol type="A">
+<li>Que el servidor esté sincronizado</li>
+</ol></li>
+<li><ol start="2" type="A">
+<li>Que el dominio en From: coincida con el de SPF/DKIM ✓</li>
+</ol></li>
+<li><ol start="3" type="A">
+<li>Que use el mismo puerto</li>
+</ol></li>
+<li><ol start="4" type="A">
+<li>Que tenga el mismo tamaño</li>
+</ol></li>
+</ul>
+<p><strong>Explicación</strong>: La alineación asegura que el remitente
+visual (From:) sea el mismo dominio autenticado por SPF o DKIM,
+previniendo suplantación.</p>
+<hr />
+<h3 id="pregunta-41">Pregunta 41</h3>
+<p><strong>¿Cuál es la función de Procmail?</strong></p>
+<ul>
+<li><ol type="A">
+<li>Enviar correos</li>
+</ol></li>
+<li><ol start="2" type="A">
+<li>Es un MDA que filtra correos entrantes ✓</li>
+</ol></li>
+<li><ol start="3" type="A">
+<li>Escanear virus</li>
+</ol></li>
+<li><ol start="4" type="A">
+<li>Gestionar DNS</li>
+</ol></li>
+</ul>
+<p><strong>Explicación</strong>: Procmail es un MDA que permite
+automatizar acciones como mover mensajes a carpetas según reglas basadas
+en asunto, remitente, etc.</p>
+<hr />
+<h3 id="pregunta-42">Pregunta 42</h3>
+<p><strong>¿Qué puerto usa SMTP sobre SSL de forma implícita
+(SMTPS)?</strong></p>
+<ul>
+<li><ol type="A">
+<li>25</li>
+</ol></li>
+<li><ol start="2" type="A">
+<li>587</li>
+</ol></li>
+<li><ol start="3" type="A">
+<li>465 ✓</li>
+</ol></li>
+<li><ol start="4" type="A">
+<li>993</li>
+</ol></li>
+</ul>
+<p><strong>Explicación</strong>: El puerto 465 es el puerto tradicional
+para conexiones SMTP cifradas desde el inicio de la sesión (SSL
+implícito).</p>
+<hr />
+<h3 id="pregunta-43">Pregunta 43</h3>
+<p><strong>¿Qué es un alias de correo?</strong></p>
+<ul>
+<li><ol type="A">
+<li>Un servidor secundario</li>
+</ol></li>
+<li><ol start="2" type="A">
+<li>Una dirección virtual que redirige a buzones reales ✓</li>
+</ol></li>
+<li><ol start="3" type="A">
+<li>Un protocolo de cifrado</li>
+</ol></li>
+<li><ol start="4" type="A">
+<li>Un tipo de spam</li>
+</ol></li>
+</ul>
+<p><strong>Explicación</strong>: Los aliases son direcciones virtuales
+útiles para crear buzones funcionales como admin@, webmaster@ o soporte@
+que redirigen a usuarios reales.</p>
+<hr />
+<h3 id="pregunta-44">Pregunta 44</h3>
+<p><strong>¿Qué comando de Dovecot verifica la sintaxis de la
+configuración?</strong></p>
+<ul>
+<li><ol type="A">
+<li>dovecot check</li>
+</ol></li>
+<li><ol start="2" type="A">
+<li>dovecot -n</li>
+</ol></li>
+<li><ol start="3" type="A">
+<li>doveconf -n ✓</li>
+</ol></li>
+<li><ol start="4" type="A">
+<li>dovecot test</li>
+</ol></li>
+</ul>
+<p><strong>Explicación</strong>: “doveconf -n” muestra la configuración
+actual de Dovecot y alerta sobre errores de formato o sintaxis.</p>
+<hr />
+<h3 id="pregunta-45">Pregunta 45</h3>
+<p><strong>¿Qué registro SPF autoriza a los servidores listados en el MX
+del dominio?</strong></p>
+<ul>
+<li><ol type="A">
+<li>ip4</li>
+</ol></li>
+<li><ol start="2" type="A">
+<li>mx ✓</li>
+</ol></li>
+<li><ol start="3" type="A">
+<li>a</li>
+</ol></li>
+<li><ol start="4" type="A">
+<li>include</li>
+</ol></li>
+</ul>
+<p><strong>Explicación</strong>: El mecanismo “mx” en SPF (v=spf1 mx
+-all) permite que cualquier IP listada en los registros MX del dominio
+sea válida para enviar.</p>
+<hr />
+<h3 id="pregunta-46">Pregunta 46</h3>
+<p><strong>¿Qué es el “Phishing”?</strong></p>
+<ul>
+<li><ol type="A">
+<li>Un protocolo de correo</li>
+</ol></li>
+<li><ol start="2" type="A">
+<li>Estafa para robar credenciales mediante correos falsos ✓</li>
+</ol></li>
+<li><ol start="3" type="A">
+<li>Un tipo de cifrado</li>
+</ol></li>
+<li><ol start="4" type="A">
+<li>Un servidor de correo</li>
+</ol></li>
+</ul>
+<p><strong>Explicación</strong>: El phishing explota la falta de
+autenticación de dominios legítimos para suplantar identidades y robar
+información sensible.</p>
+<hr />
+<h3 id="pregunta-47">Pregunta 47</h3>
+<p><strong>¿Qué parámetro de Postfix limita el tamaño máximo de un
+correo?</strong></p>
+<ul>
+<li><ol type="A">
+<li>max_message_size</li>
+</ol></li>
+<li><ol start="2" type="A">
+<li>message_size_limit ✓</li>
+</ol></li>
+<li><ol start="3" type="A">
+<li>mailbox_size_limit</li>
+</ol></li>
+<li><ol start="4" type="A">
+<li>queue_size_limit</li>
+</ol></li>
+</ul>
+<p><strong>Explicación</strong>: “message_size_limit” evita que el
+servidor se sature procesando adjuntos excesivamente grandes (por
+defecto 10MB).</p>
+<hr />
+<h3 id="pregunta-48">Pregunta 48</h3>
+<p><strong>¿Qué capa de transporte usa SMTP?</strong></p>
+<ul>
+<li><ol type="A">
+<li>UDP</li>
+</ol></li>
+<li><ol start="2" type="A">
+<li>TCP ✓</li>
+</ol></li>
+<li><ol start="3" type="A">
+<li>ICMP</li>
+</ol></li>
+<li><ol start="4" type="A">
+<li>IP</li>
+</ol></li>
+</ul>
+<p><strong>Explicación</strong>: SMTP usa TCP (Transmission Control
+Protocol) que garantiza que los datos lleguen íntegros y en el orden
+correcto.</p>
+<hr />
+<h3 id="pregunta-49">Pregunta 49</h3>
+<p><strong>¿Qué significa “FQDN”?</strong></p>
+<ul>
+<li><ol type="A">
+<li>Fast Query Domain Name</li>
+</ol></li>
+<li><ol start="2" type="A">
+<li>Full Qualified Domain Name ✓</li>
+</ol></li>
+<li><ol start="3" type="A">
+<li>First Queue Delivery Node</li>
+</ol></li>
+<li><ol start="4" type="A">
+<li>File Query Data Network</li>
+</ol></li>
+</ul>
+<p><strong>Explicación</strong>: FQDN (Fully Qualified Domain Name) es
+el nombre completo del host incluyendo su dominio (ej:
+mail.empresa.es).</p>
+<hr />
+<h3 id="pregunta-50">Pregunta 50</h3>
+<p><strong>¿Qué comando SMTP se envía después de recibir un éxito tras
+STARTTLS?</strong></p>
+<ul>
+<li><ol type="A">
+<li>MAIL FROM</li>
+</ol></li>
+<li><ol start="2" type="A">
+<li>EHLO ✓</li>
+</ol></li>
+<li><ol start="3" type="A">
+<li>AUTH</li>
+</ol></li>
+<li><ol start="4" type="A">
+<li>DATA</li>
+</ol></li>
+</ul>
+<p><strong>Explicación</strong>: El protocolo SMTP debe reiniciarse con
+EHLO después de establecer TLS para negociar capacidades sobre el túnel
+cifrado.</p>
+<hr />
+<h3 id="pregunta-51">Pregunta 51</h3>
+<p><strong>¿Qué archivo de Postfix contiene las restricciones de
+relay?</strong></p>
+<ul>
+<li><ol type="A">
+<li>master.cf</li>
+</ol></li>
+<li><ol start="2" type="A">
+<li>main.cf ✓</li>
+</ol></li>
+<li><ol start="3" type="A">
+<li>access</li>
+</ol></li>
+<li><ol start="4" type="A">
+<li>virtual</li>
+</ol></li>
+</ul>
+<p><strong>Explicación</strong>: En main.cf se configura
+“smtpd_recipient_restrictions” con directivas como permit_mynetworks,
+permit_sasl_authenticated, reject_unauth_destination.</p>
+<hr />
+<h3 id="pregunta-52">Pregunta 52</h3>
+<p><strong>¿Cuál es la diferencia principal entre SMTP y
+ESMTP?</strong></p>
+<ul>
+<li><ol type="A">
+<li>ESMTP es más lento</li>
+</ol></li>
+<li><ol start="2" type="A">
+<li>ESMTP añade capacidades extendidas (AUTH, STARTTLS, SIZE) ✓</li>
+</ol></li>
+<li><ol start="3" type="A">
+<li>SMTP es más seguro</li>
+</ol></li>
+<li><ol start="4" type="A">
+<li>No hay diferencia</li>
+</ol></li>
+</ul>
+<p><strong>Explicación</strong>: ESMTP (Extended SMTP) añade extensiones
+como autenticación (AUTH), cifrado (STARTTLS) y declaración de tamaño
+(SIZE).</p>
+<hr />
+<h3 id="pregunta-53">Pregunta 53</h3>
+<p><strong>¿Qué significa que un correo esté en estado “deferred” en la
+cola?</strong></p>
+<ul>
+<li><ol type="A">
+<li>Ha sido entregado</li>
+</ol></li>
+<li><ol start="2" type="A">
+<li>Está esperando reintento por error temporal ✓</li>
+</ol></li>
+<li><ol start="3" type="A">
+<li>Ha sido rechazado permanentemente</li>
+</ol></li>
+<li><ol start="4" type="A">
+<li>Está siendo escaneado</li>
+</ol></li>
+</ul>
+<p><strong>Explicación</strong>: “Deferred” indica que hubo un problema
+temporal (servidor destino ocupado, red caída) y Postfix reintentará el
+envío.</p>
+<hr />
+<h3 id="pregunta-54">Pregunta 54</h3>
+<p><strong>¿Qué herramienta online permite verificar la configuración
+completa de correo?</strong></p>
+<ul>
+<li><ol type="A">
+<li>Google</li>
+</ol></li>
+<li><ol start="2" type="A">
+<li>MXToolbox ✓</li>
+</ol></li>
+<li><ol start="3" type="A">
+<li>Wikipedia</li>
+</ol></li>
+<li><ol start="4" type="A">
+<li>GitHub</li>
+</ol></li>
+</ul>
+<p><strong>Explicación</strong>: MXToolbox proporciona verificación de
+registros DNS (MX, SPF, DKIM, DMARC), pruebas de listas negras y
+diagnóstico completo.</p>
+<hr />
+<h3 id="pregunta-55">Pregunta 55</h3>
+<p><strong>¿Qué RFC define el protocolo SMTP moderno?</strong></p>
+<ul>
+<li><ol type="A">
+<li>RFC 821</li>
+</ol></li>
+<li><ol start="2" type="A">
+<li>RFC 5321 ✓</li>
+</ol></li>
+<li><ol start="3" type="A">
+<li>RFC 5322</li>
+</ol></li>
+<li><ol start="4" type="A">
+<li>RFC 7208</li>
+</ol></li>
+</ul>
+<p><strong>Explicación</strong>: RFC 5321 es la especificación actual
+del protocolo SMTP. RFC 821 era la versión antigua, RFC 5322 define el
+formato de mensajes.</p>
+<hr />
+<h2 id="instrucciones-para-importar-a-kahoot">Instrucciones para
+Importar a Kahoot</h2>
+<h3 id="formato-requerido-por-kahoot">Formato Requerido por Kahoot</h3>
+<p>Kahoot acepta importación mediante: 1. <strong>Hoja de
+cálculo</strong> (Excel/Google Sheets) 2. <strong>Formato
+específico</strong> con columnas: Question, Answer 1, Answer 2, Answer
+3, Answer 4, Time limit, Correct answer(s)</p>
+<h3 id="pasos-para-crear-el-archivo-de-importación">Pasos para Crear el
+Archivo de Importación</h3>
+<ol type="1">
+<li><p>Crear una hoja de cálculo con las siguientes columnas:</p>
+<ul>
+<li><strong>Question</strong>: Texto de la pregunta</li>
+<li><strong>Answer 1</strong>: Primera opción</li>
+<li><strong>Answer 2</strong>: Segunda opción</li>
+<li><strong>Answer 3</strong>: Tercera opción</li>
+<li><strong>Answer 4</strong>: Cuarta opción</li>
+<li><strong>Time limit</strong>: Tiempo en segundos (20, 30, 60,
+etc.)</li>
+<li><strong>Correct answer(s)</strong>: Número de la respuesta correcta
+(1, 2, 3, o 4)</li>
+</ul></li>
+<li><p>Copiar cada pregunta de este documento a la hoja de
+cálculo</p></li>
+<li><p>Guardar como archivo Excel (.xlsx) o CSV</p></li>
+<li><p>En Kahoot, ir a “Create” → “Import” → Seleccionar el
+archivo</p></li>
+</ol>
+<h3 id="recomendaciones">Recomendaciones</h3>
+<ul>
+<li><strong>Tiempo límite</strong>: 30-45 segundos para preguntas
+técnicas</li>
+<li><strong>Orden</strong>: Mezclar aleatoriamente en Kahoot para evitar
+patrones</li>
+<li><strong>Explicaciones</strong>: Activar “Show explanation” en Kahoot
+y copiar las explicaciones de este documento</li>
+</ul>
+<hr />
+<p><strong>Total de Preguntas</strong>: 55<br />
+<strong>Nivel</strong>: Técnico avanzado<br />
+<strong>Tema</strong>: Administración de Servicios de Correo
+Electrónico<br />
+<strong>Módulo</strong>: SRI - ASIR</p>
+</body>
+</html>

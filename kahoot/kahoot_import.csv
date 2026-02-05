@@ -1,0 +1,56 @@
+Question,Answer 1,Answer 2,Answer 3,Answer 4,Time limit,Correct answer(s)
+¿Qué agente es responsable de enrutar mensajes entre servidores?,MUA (Mail User Agent),MTA (Mail Transport Agent),MDA (Mail Delivery Agent),MSA (Mail Submission Agent),30,2
+¿Cuál es el puerto estándar para SMTP Submission (MUA a MTA)?,25,465,587,993,30,3
+¿Qué registro DNS especifica el servidor de correo de un dominio?,A (Address),MX (Mail Exchanger),PTR (Pointer),CNAME (Canonical Name),30,2
+¿Qué protocolo sincroniza las carpetas del servidor con el cliente?,SMTP,POP3,IMAP,HTTP,30,3
+¿Qué comando SMTP inicia la transferencia del contenido del correo?,MAIL FROM,RCPT TO,DATA,EHLO,30,3
+¿Qué significa el código de respuesta SMTP 550?,Servicio listo,Acción completada,Buzón no disponible / Acceso denegado,Servicio no disponible temporalmente,30,3
+¿Qué registro SPF indica un SoftFail si la IP no está autorizada?,-all,~all,+all,?all,30,2
+¿En qué archivo de Postfix se habilitan servicios como smtps o submission?,main.cf,master.cf,aliases,virtual,30,2
+¿Qué extensión permite enviar archivos binarios por correo?,SMTP,MIME,ASCII,UTF-8,30,2
+¿Qué herramienta se usa para generar firmas DKIM en Postfix?,SpamAssassin,OpenDKIM,ClamAV,Amavis,30,2
+¿Qué protocolo de acceso descarga los correos y suele borrarlos del servidor?,SMTP,IMAP,POP3,LMTP,30,3
+¿Cuál es el puerto estándar de IMAP cifrado con SSL/TLS (IMAPS)?,143,993,995,587,30,2
+¿Qué directiva de Postfix define qué dominios se entregan localmente?,myhostname,mynetworks,mydestination,relayhost,30,3
+¿Qué comando SMTP se usa para finalizar la conexión?,EXIT,CLOSE,QUIT,BYE,30,3
+¿Qué es un Open Relay?,Un servidor muy rápido,Un servidor que permite reenviar correo a cualquiera,Un servidor con cifrado,Un servidor con autenticación,30,2
+¿Qué registro DNS asocia una IP con un nombre de dominio (inversa)?,A,MX,PTR,TXT,30,3
+¿Qué protocolo añade una capa de autenticación a SMTP e IMAP?,TLS,SSL,SASL,OAuth,30,3
+¿Cuál es la principal ventaja de Maildir sobre mbox?,Ocupa menos espacio,Es más rápido,No requiere bloqueo de archivos (locking),Es más antiguo,30,3
+¿Qué tag de DMARC indica la dirección para informes agregados?,ruf,rua,p,sp,30,2
+¿Qué motor de filtrado usa reglas bayesianas para detectar spam?,ClamAV,Amavis,SpamAssassin,Postfix,30,3
+¿Qué significa el código SMTP 250?,Error temporal,Acción completada correctamente,Buzón lleno,Conexión rechazada,30,2
+¿Qué puerto usa POP3 de forma segura (SSL/TLS)?,110,995,993,465,30,2
+¿Qué cabecera técnica rastrea cada salto de un correo?,From,To,Received,Subject,30,3
+¿Qué comando se usa en Debian para refrescar los aliases de correo?,postfix reload,newaliases,postmap,postqueue,30,2
+¿Qué es el Greylisting?,Filtro de virus,Rechazo temporal de correos de remitentes desconocidos,Lista negra permanente,Cifrado de mensajes,30,2
+¿Qué estándar protege el cuerpo del mensaje de ser alterado?,SPF,DKIM,DMARC,TLS,30,2
+¿Qué protocolo usa Mailman para hablar con Postfix?,SMTP,IMAP,LMTP,POP3,30,3
+¿Cuál es la política DMARC más estricta?,p=none,p=quarantine,p=reject,p=monitor,30,3
+¿Qué comando SMTP permite verificar si existe un usuario en el sistema?,EXPN,VRFY,RCPT,MAIL,30,2
+¿Qué puerto usa SMTP para transporte entre servidores (sin cifrado obligatorio)?,25,465,587,993,30,1
+¿Qué directiva de Dovecot especifica dónde se guardan los correos?,mail_home,mail_location,mail_path,mail_dir,30,2
+¿Qué es un MUA?,Mail Transfer Agent,Mail User Agent,Mail Utility Application,Mail Universal Access,30,2
+¿Qué comando IMAP permite leer solo la cabecera de un mensaje?,GET,READ,FETCH,RETRIEVE,30,3
+¿Qué significa el código SMTP 421?,Acción completada,El servicio no está disponible temporalmente,Buzón no encontrado,Autenticación requerida,30,2
+¿Qué registro DNS es necesario para validar la firma DKIM?,Registro A,Registro MX,Registro TXT con la clave pública,Registro PTR,30,3
+¿Qué es el Envelope From?,La dirección visible en el cliente,El remitente declarado en MAIL FROM,El asunto del mensaje,La fecha de envío,30,2
+¿Qué demonio de Postfix gestiona la cola de correo?,smtpd,qmgr,cleanup,master,30,2
+¿Qué herramienta de Linux permite enviar correos desde la terminal?,sendmail,mail / mailx,telnet,curl,30,2
+¿Qué cifrado se inicia en el puerto 25 para subir el nivel de seguridad?,SSL,STARTTLS,TLS,HTTPS,30,2
+¿Qué significa la alineación en DMARC?,Que el servidor esté sincronizado,Que el dominio en From: coincida con el de SPF/DKIM,Que use el mismo puerto,Que tenga el mismo tamaño,30,2
+¿Cuál es la función de Procmail?,Enviar correos,Es un MDA que filtra correos entrantes,Escanear virus,Gestionar DNS,30,2
+¿Qué puerto usa SMTP sobre SSL de forma implícita (SMTPS)?,25,587,465,993,30,3
+¿Qué es un alias de correo?,Un servidor secundario,Una dirección virtual que redirige a buzones reales,Un protocolo de cifrado,Un tipo de spam,30,2
+¿Qué comando de Dovecot verifica la sintaxis de la configuración?,dovecot check,dovecot -n,doveconf -n,dovecot test,30,3
+¿Qué registro SPF autoriza a los servidores listados en el MX del dominio?,ip4,mx,a,include,30,2
+¿Qué es el Phishing?,Un protocolo de correo,Estafa para robar credenciales mediante correos falsos,Un tipo de cifrado,Un servidor de correo,30,2
+¿Qué parámetro de Postfix limita el tamaño máximo de un correo?,max_message_size,message_size_limit,mailbox_size_limit,queue_size_limit,30,2
+¿Qué capa de transporte usa SMTP?,UDP,TCP,ICMP,IP,30,2
+¿Qué significa FQDN?,Fast Query Domain Name,Full Qualified Domain Name,First Queue Delivery Node,File Query Data Network,30,2
+¿Qué comando SMTP se envía después de recibir un éxito tras STARTTLS?,MAIL FROM,EHLO,AUTH,DATA,30,2
+¿Qué archivo de Postfix contiene las restricciones de relay?,master.cf,main.cf,access,virtual,30,2
+¿Cuál es la diferencia principal entre SMTP y ESMTP?,ESMTP es más lento,ESMTP añade capacidades extendidas (AUTH STARTTLS SIZE),SMTP es más seguro,No hay diferencia,30,2
+¿Qué significa que un correo esté en estado deferred en la cola?,Ha sido entregado,Está esperando reintento por error temporal,Ha sido rechazado permanentemente,Está siendo escaneado,30,2
+¿Qué herramienta online permite verificar la configuración completa de correo?,Google,MXToolbox,Wikipedia,GitHub,30,2
+¿Qué RFC define el protocolo SMTP moderno?,RFC 821,RFC 5321,RFC 5322,RFC 7208,30,2
