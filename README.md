@@ -23,7 +23,27 @@ IES [Nombre del Centro]
 
 ## 📚 Índice del Material
 
-### 1. Material de Aula Invertida (`aula_invertida/`)
+### 1. Presentación (`presentacion/`)
+
+Material teórico y presentaciones del tema:
+
+- **`Instalación y Administración del servicio de correo electrónico.pdf`** - Presentación completa del tema
+  - Fundamentos teóricos
+  - Arquitectura de servicios de correo
+  - Configuración paso a paso
+  - Ejemplos prácticos
+
+### 2. Actividades Prácticas (`actividades/`)
+
+Ejercicios y prácticas para realizar en laboratorio:
+
+- **`Actividades prácticas.docx`** - Conjunto de actividades prácticas
+  - Instalación de Postfix y Dovecot
+  - Configuración de autenticación
+  - Implementación de seguridad
+  - Troubleshooting de problemas reales
+
+### 3. Material de Aula Invertida (`material_aula_invertida/aula_invertida/`)
 
 Material diseñado para que el alumnado se prepare antes de las sesiones presenciales:
 
@@ -49,7 +69,7 @@ Material diseñado para que el alumnado se prepare antes de las sesiones presenc
   - Tutoriales completos
   - Herramientas de diagnóstico
 
-### 2. Evaluación Interactiva (`kahoot/`)
+### 4. Evaluación Interactiva (`kahoot/`)
 
 Material para evaluación mediante Kahoot:
 
@@ -65,7 +85,17 @@ Material para evaluación mediante Kahoot:
 - Formato importable directamente a la plataforma
 - Cobertura completa de todos los temas
 
-### 3. Guía del Profesor (`guia_profesor/`)
+### 5. Material de Examen (`examen/`)
+
+Preguntas y material de evaluación:
+
+- **`PREGUNTAS EXÁMEN SERVICIOS DE CORREO ELECTRÓNICO.pdf`** - Banco de preguntas de examen
+  - Preguntas tipo test
+  - Preguntas de desarrollo
+  - Casos prácticos
+  - Criterios de evaluación
+
+### 6. Guía del Profesor (`guia_profesor/`)
 
 Material de apoyo para el profesorado:
 
@@ -86,24 +116,34 @@ Material de apoyo para el profesorado:
 
 ```
 SRI/
-├── README.md                          # Este archivo
+├── README.md                                    # Este archivo
 │
-├── aula_invertida/                    # Material para estudiantes
-│   ├── README.md                      # Guía del material
-│   ├── apuntes_correo_electronico.md  # Apuntes completos
-│   ├── video_seleccionado.md          # Video y justificación
-│   └── documentacion_oficial.md       # Enlaces a recursos
+├── presentacion/                                # Material teórico
+│   └── Instalación y Administración del servicio de correo electrónico.pdf
 │
-├── kahoot/                            # Material de evaluación
-│   ├── README.md                      # Instrucciones de uso
-│   ├── kahoot_correo_electronico.md   # 55 preguntas con explicaciones
-│   ├── kahoot_import.csv              # Archivo para importar
-│   ├── kahoot_correo_electronico.html # Versión HTML
-│   └── GENERAR_PDF.md                 # Instrucciones PDF
+├── actividades/                                 # Actividades prácticas
+│   └── Actividades prácticas.docx
 │
-└── guia_profesor/                     # Material para profesores
-    ├── guia_imparticion.md            # Guía de impartición
-    └── Flipped Classroom - (...).docx # Documento original
+├── material_aula_invertida/                     # Material de aula invertida
+│   └── aula_invertida/
+│       ├── README.md                            # Guía del material
+│       ├── apuntes_correo_electronico.md        # Apuntes completos
+│       ├── video_seleccionado.md                # Video y justificación
+│       └── documentacion_oficial.md             # Enlaces a recursos
+│
+├── kahoot/                                      # Material de evaluación
+│   ├── README.md                                # Instrucciones de uso
+│   ├── kahoot_correo_electronico.md             # 55 preguntas con explicaciones
+│   ├── kahoot_import.csv                        # Archivo para importar
+│   ├── kahoot_correo_electronico.html           # Versión HTML
+│   └── GENERAR_PDF.md                           # Instrucciones PDF
+│
+├── examen/                                      # Material de examen
+│   └── PREGUNTAS EXÁMEN SERVICIOS DE CORREO ELECTRÓNICO.pdf
+│
+└── guia_profesor/                               # Material para profesores
+    ├── guia_imparticion.md                      # Guía de impartición
+    └── Flipped Classroom - (...).docx           # Documento original
 ```
 
 ---
@@ -125,48 +165,86 @@ Al completar este material, el alumnado será capaz de:
 
 ### Para Estudiantes
 
-1. **Preparación previa** (3-4 horas antes de clase):
-   - Lee `aula_invertida/apuntes_correo_electronico.md`
-   - Ve el video indicado en `aula_invertida/video_seleccionado.md`
+1. **Estudio inicial** (antes de empezar):
+   - Revisa la presentación en `presentacion/`
+   - Familiarízate con los conceptos básicos
+
+2. **Preparación previa** (3-4 horas antes de clase):
+   - Lee `material_aula_invertida/aula_invertida/apuntes_correo_electronico.md`
+   - Ve el video indicado en `material_aula_invertida/aula_invertida/video_seleccionado.md`
    - Instala Postfix y Dovecot en tu VM siguiendo los apuntes
    - Documenta tus dudas
 
-2. **Durante la clase presencial**:
+3. **Durante la clase presencial**:
    - Participa en el quiz Kahoot inicial
    - Resuelve dudas específicas con el profesor
-   - Practica configuraciones avanzadas
+   - Realiza las actividades prácticas de `actividades/`
    - Trabaja en troubleshooting colaborativo
 
-3. **Después de clase**:
+4. **Después de clase**:
    - Completa la configuración en tu VM
    - Documenta todo el proceso
    - Prepara la entrega final
 
+5. **Preparación para el examen**:
+   - Repasa las preguntas en `examen/`
+   - Realiza el Kahoot completo varias veces
+   - Consulta la documentación oficial
+
 ### Para Profesores
 
-1. **Preparación**:
+1. **Preparación inicial**:
    - Lee `guia_profesor/guia_imparticion.md`
-   - Importa el Kahoot desde `kahoot/kahoot_import.csv`
-   - Prepara VM de demostración
-   - Publica material con 1 semana de antelación
+   - Revisa la presentación en `presentacion/`
+   - Prepara las actividades prácticas de `actividades/`
 
-2. **Impartición**:
+2. **Configuración del Kahoot**:
+   - Importa el Kahoot desde `kahoot/kahoot_import.csv`
+   - Revisa las 55 preguntas
+   - Configura el modo de juego
+
+3. **Preparación de clase**:
+   - Prepara VM de demostración
+   - Publica material de aula invertida con 1 semana de antelación
+   - Prepara casos de troubleshooting
+
+4. **Impartición**:
    - Sigue la planificación temporal de la guía
    - Usa el Kahoot para evaluación diagnóstica
    - Enfoca la clase en práctica y troubleshooting
    - Aplica los criterios de evaluación documentados
 
+5. **Evaluación**:
+   - Usa las preguntas de `examen/` para evaluación formal
+   - Complementa con el Kahoot para evaluación continua
+   - Evalúa las actividades prácticas completadas
+
 ---
 
 ## 📊 Estadísticas del Material
 
-- **Apuntes**: ~14.7 KB, 600+ líneas
-- **Documentación**: 50+ enlaces verificados
-- **Kahoot**: 55 preguntas técnicas
+### Contenido Creado
+
+- **Presentación**: 1 PDF (38.4 MB) con teoría completa
+- **Actividades**: 1 documento Word (2.3 MB) con prácticas
+- **Apuntes**: ~14.7 KB, 600+ líneas en Markdown
+- **Documentación**: 50+ enlaces verificados a recursos oficiales
+- **Kahoot**: 55 preguntas técnicas con explicaciones
+- **Examen**: 1 PDF con banco de preguntas
 - **Guía del profesor**: ~30 KB, 12 errores típicos documentados
-- **Total de archivos**: 11 archivos principales
-- **Tiempo de preparación estudiante**: 3-4 horas
-- **Tiempo de clase presencial**: 15 horas
+
+### Archivos Totales
+
+- **Total de archivos**: 14 archivos principales
+- **Total de directorios**: 6 carpetas organizadas
+- **Tamaño total**: ~43 MB de material
+
+### Tiempos Estimados
+
+- **Tiempo de preparación estudiante**: 3-4 horas (material previo)
+- **Tiempo de clase presencial**: 15 horas (3 sesiones de 5 horas)
+- **Tiempo de consolidación**: 4-5 horas (trabajo posterior)
+- **Total**: ~22-24 horas de aprendizaje completo
 
 ---
 
