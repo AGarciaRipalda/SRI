@@ -17,7 +17,7 @@ Este repositorio contiene material didáctico completo para el aprendizaje de la
 
 **Alejandro García Ripalda**  
 Estudiante de 2º ASIR  
-IES [Nombre del Centro]
+Ilerna Albor FP
 
 ---
 
