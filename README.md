@@ -15,7 +15,7 @@ Este repositorio contiene material didáctico completo para el aprendizaje de la
 
 ## 👨‍🎓 Autor
 
-**Alejandro García Ripalda**  
+**Alejandro García y Nerea Fdez**  
 Estudiante de 2º ASIR  
 Ilerna Albor FP
 
